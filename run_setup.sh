@@ -22,3 +22,11 @@ kubectl create -f app-deployment.yaml
 
 ###### Deploying the app service ######
 kubectl create -f app-service.yaml 
+
+
+
+#### Note: Kubernetes Metrics server needed to run the Horizontal Pod Autoscalers ####
+kubectl create -f mongodb-hpa.yaml 
+
+kubectl create -f app-hpa.yaml 
+
