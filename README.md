@@ -1,4 +1,3 @@
-#!/bin/bash 
 
 ##### If deploying the setup on a baremetal server #####
 mkdir -p /data/
