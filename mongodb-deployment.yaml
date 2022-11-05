@@ -38,6 +38,13 @@ spec:
             requests:
               cpu: "100m"
               memory: 500Mi
+          env:
+            - name: MONGODB_USERNAME
+              value: dbadmin
+            - name: MONGODB_PASSWORD
+              value: Bwqwqasaklaqaj189
+            - name: MONGODB_DATABASE
+              value: mydb
           ports:
             - containerPort: 27017
           volumeMounts:
