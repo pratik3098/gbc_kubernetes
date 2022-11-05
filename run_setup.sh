@@ -1,7 +1,8 @@
 #!/bin/bash 
 
-## The Persistent volume local filesystem storage 
+##### If deploying the setup on a baremetal server #####
 mkdir -p /data/
+kubectl create -f local-storageclass.yaml 
 
 ### Creating the pvc for the mongodb 
 kubectl create -f mongdb-pvc.yaml 
